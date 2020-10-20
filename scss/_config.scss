@@ -44,8 +44,4 @@ $spaceamounts: (1, 2, 3, 4, 5);
     .py-#{$space} {
         padding: #{$space}rem 0;
     }
-
-    .px-#{$space} {
-        padding: 0 #{$space}rem;
-    }
 }
