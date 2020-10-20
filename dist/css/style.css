@@ -114,6 +114,37 @@
   margin-bottom: 3rem;
 }
 
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: #d72323;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: #eeeeee;
+  margin: 1.5rem 0;
+}
+
 .bg-primary {
   background-color: #d72323;
   color: #fff;
