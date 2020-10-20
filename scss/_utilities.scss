@@ -20,7 +20,7 @@
     }
 
     &-medium {
-        @include set-backround($medium-color);
+        @include set-background($medium-color);
     }
 
     &-dark {

@@ -1,6 +1,6 @@
 @import 'config';
-@import 'utilities';
 @import 'form';
+@import 'utilities';
 
 * {
     box-sizing: border-box;
@@ -47,7 +47,7 @@ img {
     }
 
     a {
-        color: $light-color;
+        color: #fff;
         padding: 0.45rem;
         margin: 0 0.25rem;
 

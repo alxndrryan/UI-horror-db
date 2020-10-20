@@ -17,7 +17,7 @@
     <title>Horror DB</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar bg-medium">
       <h1>
         <a href="home.html"> <i class="fas fa-ghost"></i> Horror DB</a>
       </h1>
@@ -31,15 +31,21 @@
     <section class="container">
       <h1>Sign Up</h1>
       <p>Create your account</p>
-      <form action="home.html">
-        <div><input type="text" placeholder="Name" /></div>
-        <div>
+      <form action="home.html" class="form">
+        <div class="form-group"><input type="text" placeholder="Name" /></div>
+        <div class="form-group">
           <input type="email" placeholder="Email Address" />
         </div>
-        <div><input type="password" placeholder="Password" /></div>
-        <div><input type="password" placeholder="Confirm Password" /></div>
-        <input type="submit" />
-        <p>Already have an account? <a href="login.html">Sign In</a></p>
+        <div class="form-group">
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Confirm Password" />
+        </div>
+        <input class="btn btn-primary" type="submit" />
+        <p class="my-1">
+          Already have an account? <a href="login.html">Sign In</a>
+        </p>
       </form>
     </section>
   </body>
