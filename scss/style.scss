@@ -102,3 +102,19 @@ img {
         width: 80%;
     }
 }
+
+// Movie API Call
+
+.movie-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+    line-height: 1.8;
+
+    padding: 1rem;
+
+    img {
+        height: auto;
+        width: auto;
+    }
+}

@@ -306,3 +306,16 @@ img {
   text-align: center;
   width: 80%;
 }
+
+.movie-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+  line-height: 1.8;
+  padding: 1rem;
+}
+
+.movie-container img {
+  height: auto;
+  width: auto;
+}
