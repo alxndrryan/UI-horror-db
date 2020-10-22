@@ -5,7 +5,7 @@
     overflow: hidden;
     padding: 0 2rem;
     margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
 
 // Text Styles
@@ -17,6 +17,12 @@
 
 .large {
     font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.medium {
+    font-size: 2.5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
@@ -44,6 +50,7 @@
 .bg {
     &-primary {
         @include set-background($primary-color);
+        border: $medium-color 1px solid;
     }
 
     &-light {
@@ -53,10 +60,12 @@
 
     &-medium {
         @include set-background($medium-color);
+        border: $dark-color 1px solid;
     }
 
     &-dark {
         @include set-background($dark-color);
+        border: $medium-color 1px solid;
     }
 }
 
@@ -86,6 +95,14 @@
 
         &:hover {
             background: lighten($dark-color, 5%);
+        }
+    }
+
+    &.btn-medium {
+        @include set-background($medium-color);
+
+        &:hover {
+            background: lighten($medium-color, 5%);
         }
     }
 }

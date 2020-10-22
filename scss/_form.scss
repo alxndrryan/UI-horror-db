@@ -31,3 +31,25 @@
         font: inherit;
     }
 }
+
+.movie-form {
+    width: 50%;
+    margin: 3rem auto auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.9;
+
+    input[type='text'] {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .btn {
+        margin: auto;
+        width: 30%;
+    }
+}
