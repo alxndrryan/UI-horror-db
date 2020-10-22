@@ -3,10 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Horror DB</title>
   </head>
   <body>
-    <h1>Test</h1>
+    <nav class="navbar bg-medium">
+      <h1>
+        <a href="index.html"> <i class="fas fa-ghost"></i> Horror DB</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Community</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li>
+          <form action="index.html">
+            <input type="text" placeholder="Search for movie.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <section class="landing">
+      <div class="dark-overlay">
+        <div class="landing-inner">
+          <h1 class="x-large">Horror DB</h1>
+          <p class="lead">
+            Search for your favorite horror films and connect with a community
+            of fellow horror fans
+          </p>
+          <div class="buttons">
+            <a href="register.html" class="btn btn-primary">Sign Up</a>
+            <a href="login.html" class="btn btn-primary">Login</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>Don't look at me</h1>
+    </section>
   </body>
 </html>
