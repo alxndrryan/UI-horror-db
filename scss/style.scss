@@ -110,11 +110,29 @@ img {
     grid-template-columns: 1fr 1fr;
     margin-top: 3rem;
     line-height: 1.8;
-
+    border: 3px solid $primary-color;
     padding: 1rem;
 
     img {
         height: auto;
         width: auto;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+
+        .item-1,
+        .item-2 {
+
+            padding: 1rem;
+        }
+
+        .movie-line {
+            border: 1px solid $primary-color;
+            margin: 1.5rem 0;
+        }
     }
 }
