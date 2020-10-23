@@ -105,6 +105,11 @@
             background: lighten($medium-color, 5%);
         }
     }
+
+    &:hover {
+        background: lighten($dark-color, 20%);
+        color: #fff;
+    }
 }
 
 .dark-overlay {

@@ -242,6 +242,11 @@
   background: #45545f;
 }
 
+.btn:hover {
+  background: #5b6b7c;
+  color: #fff;
+}
+
 .dark-overlay {
   height: 100%;
   width: 100%;
@@ -413,4 +418,12 @@ img {
 
 .post img {
   width: 150px;
+}
+
+.post .btn {
+  border: 1px solid #d72323;
+}
+
+.post .btn.btn-primary {
+  border: 1px solid #eeeeee;
 }

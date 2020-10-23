@@ -182,5 +182,13 @@ img {
         width: 150px;
     }
 
+    .btn {
+        border: 1px solid $primary-color;
+    }
+
+    .btn.btn-primary {
+        border: 1px solid $light-color;
+    }
+
 
 }
