@@ -78,7 +78,7 @@
   padding: 5rem 0;
 }
 
-.form {
+.form-border {
   border: 1px solid #eeeeee;
   border-radius: 25px;
 }
@@ -385,4 +385,32 @@ img {
 
 .med-h2 {
   color: #d72323;
+}
+
+.post-form input.btn {
+  border: 1px solid #d72323;
+}
+
+.post-form-header {
+  padding: 0.5rem;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+  border: 1px solid #d72323;
+}
+
+.post > div:first-child {
+  text-align: center;
+}
+
+.post a {
+  color: #eeeeee;
+}
+
+.post img {
+  width: 150px;
 }

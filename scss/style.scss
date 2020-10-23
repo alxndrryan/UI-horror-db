@@ -144,8 +144,43 @@ img {
     margin-top: 0;
 }
 
-// Landing Movie Search
+// Landing Page Movie Search
 
 .med-h2 {
     color: $primary-color;
+}
+
+// Posts Page
+.post-form {
+    input.btn {
+        border: 1px solid $primary-color;
+    }
+}
+
+.post-form-header {
+    padding: 0.5rem;
+
+
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 2rem;
+    align-items: center;
+    border: 1px solid $primary-color;
+
+    &>div:first-child {
+        text-align: center;
+    }
+
+    a {
+        color: $light-color;
+    }
+
+    img {
+        width: 150px;
+    }
+
+
 }

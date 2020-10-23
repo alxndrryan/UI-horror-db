@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Horror DB</title>
+  </head>
+  <body>
+    <nav class="navbar bg-medium">
+      <h1>
+        <a href="index.html"> <i class="fas fa-ghost"></i> Horror DB</a>
+      </h1>
+      <ul>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="posts.html">Post</a></li>
+        <li><a href="profiles.html">Community</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li>
+          <form action="index.html">
+            <input type="text" placeholder="Search for movie.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <section class="container">
+      <a href="posts.html" class="btn btn-primary">Back To Posts</a>
+      <div class="post bg-medium p-1 my-1">
+        <div>
+          <a href="profile.html">
+            <img
+              class="round-img"
+              src="//www.gravatar.com/avatar/f376cb14a26e79ecf68ca87928d57cdc?s=200&r=pg&d=mm"
+              alt="profile-img"
+            />
+            <h4>Alexander Hogle</h4>
+          </a>
+        </div>
+        <div>
+          <p class="my-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+            voluptatibus? Libero autem obcaecati consequatur consectetur nam
+            assumenda alias quidem ducimus magni maxime praesentium, quos,
+            consequuntur ea pariatur labore expedita ipsum.
+          </p>
+        </div>
+      </div>
+
+      <div class="post-form">
+        <div class="post-form-header bg-primary">
+          <h3>Leave A Comment</h3>
+        </div>
+        <form class="form my-1">
+          <textarea
+            name="text"
+            cols="30"
+            rows="5"
+            placeholder="Comment on this post"
+          ></textarea>
+          <input type="submit" class="btn btn-medium my-1" value="Submit" />
+        </form>
+      </div>
+
+      <div class="posts">
+        <div class="post bg-medium p-1 my-1">
+          <div>
+            <a href="profile.html">
+              <img
+                class="round-img"
+                src="//www.gravatar.com/avatar/f376cb14a26e79ecf68ca87928d57cdc?s=200&r=pg&d=mm"
+                alt="profile-img"
+              />
+              <h4>Rand al'Thor</h4>
+            </a>
+          </div>
+          <div>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              ut consectetur. Animi mollitia assumenda itaque dignissimos
+              doloribus fugiat voluptates pariatur tempore, dolores maxime minus
+              eius veniam, vel similique quam dicta praesentium cum. Expedita
+              minima provident eum consequuntur iste ad, dolores repudiandae
+              vitae, repellat, aliquam unde?
+            </p>
+          </div>
+        </div>
+
+        <div class="post bg-medium p-1 my-1">
+          <div>
+            <a href="profile.html">
+              <img
+                class="round-img"
+                src="//www.gravatar.com/avatar/f376cb14a26e79ecf68ca87928d57cdc?s=200&r=pg&d=mm"
+                alt="profile-img"
+              />
+              <h4>Alexander Hogle</h4>
+            </a>
+          </div>
+          <div>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              possimus corporis sunt necessitatibus! Minus nesciunt soluta
+              suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
+              dolor? Illo perferendis eveniet cum cupiditate aliquam?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
