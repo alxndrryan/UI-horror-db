@@ -196,21 +196,32 @@ img {
 // Profiles Page
 .profile {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 200px 2fr 1fr 1fr 1fr;
     grid-gap: 2rem;
-    align-items: center;
+
     padding: 1rem;
     line-height: 1.8;
     margin-bottom: 1rem;
     text-align: center;
 
+    .profile-center {
+        margin: auto;
+
+        p,
+        a {
+            margin: 0.3rem;
+        }
+    }
+
+    img {
+        margin-bottom: 0.7rem;
+    }
+
     .profile-flex {
         display: flex;
         flex-direction: column;
-        line-height: 1.5;
-        margin: 0 0.3rem;
-
-
+        line-height: 1.2;
+        justify-content: space-between;
     }
 
 

@@ -430,20 +430,32 @@ img {
 
 .profile {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+  grid-template-columns: 200px 2fr 1fr 1fr 1fr;
   grid-gap: 2rem;
-  align-items: center;
   padding: 1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
   text-align: center;
 }
 
+.profile .profile-center {
+  margin: auto;
+}
+
+.profile .profile-center p,
+.profile .profile-center a {
+  margin: 0.3rem;
+}
+
+.profile img {
+  margin-bottom: 0.7rem;
+}
+
 .profile .profile-flex {
   display: flex;
   flex-direction: column;
-  line-height: 1.5;
-  margin: 0 0.3rem;
+  line-height: 1.2;
+  justify-content: space-between;
 }
 
 .profile .btn.btn-primary {
