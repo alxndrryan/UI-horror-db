@@ -132,6 +132,39 @@
   width: 30%;
 }
 
+.social-input {
+  display: flex;
+}
+
+.social-input input {
+  border-radius: 5px;
+}
+
+.social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.social-input i.fa-twitter {
+  color: #38a1f3;
+}
+
+.social-input i.fa-facebook {
+  color: #3b5998;
+}
+
+.social-input i.fa-instagram {
+  color: #3f729b;
+}
+
+.social-input i.fa-youtube {
+  color: #c4302b;
+}
+
+.social-input i.fa-linkedin {
+  color: #0077b5;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
@@ -432,7 +465,7 @@ img {
   display: grid;
   grid-template-columns: 200px 2fr 1fr 1fr 1fr;
   grid-gap: 2rem;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   line-height: 1.8;
   margin-bottom: 1rem;
   text-align: center;
@@ -460,4 +493,71 @@ img {
 
 .profile .btn.btn-primary {
   border: 1px solid #eeeeee;
+}
+
+.profile-grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.profile-grid .profile-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-grid .profile-top img {
+  width: 250px;
+}
+
+.profile-grid .profile-top .icons a {
+  color: #eeeeee;
+  margin: 0 0.3rem;
+}
+
+.profile-grid .profile-top .icons a:hover {
+  color: #d72323;
+}
+
+.profile-grid .profile-about {
+  text-align: center;
+}
+
+.profile-grid .profile-about h2 {
+  margin-bottom: 1rem;
+}
+
+.profile-grid .profile-about .fav-movies {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile-grid .profile-about .profile-flex {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  justify-content: space-between;
+}
+
+.profile-grid .profile-about .profile-flex img {
+  height: auto;
+  width: auto;
+  max-height: 200px;
+  max-width: 150;
+  margin-bottom: 0.7rem;
+}
+
+.create-profile .cust-form {
+  padding: 1rem 2rem;
+}
+
+.create-profile .btn.btn-light,
+.create-profile input.btn.btn-primary {
+  border: 2px solid #303841;
+}
+
+.create-profile .input-border {
+  border-radius: 5px;
 }

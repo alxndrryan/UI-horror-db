@@ -199,7 +199,7 @@ img {
     grid-template-columns: 200px 2fr 1fr 1fr 1fr;
     grid-gap: 2rem;
 
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
     line-height: 1.8;
     margin-bottom: 1rem;
     text-align: center;
@@ -228,5 +228,79 @@ img {
 
     .btn.btn-primary {
         border: 1px solid $light-color;
+    }
+}
+
+// Single Profile Page
+.profile-grid {
+    display: grid;
+    grid-gap: 1rem;
+
+    .profile-top {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        img {
+            width: 250px;
+        }
+
+        .icons a {
+            color: $light-color;
+            margin: 0 0.3rem;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .profile-about {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        .fav-movies {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .profile-flex {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            justify-content: space-between;
+
+            img {
+                height: auto;
+                width: auto;
+                max-height: 200px;
+                max-width: 150;
+                margin-bottom: 0.7rem;
+            }
+        }
+    }
+}
+
+.create-profile {
+
+    .cust-form {
+        padding: 1rem 2rem;
+    }
+
+    .btn.btn-light,
+    input.btn.btn-primary {
+        border: 2px solid $dark-color;
+    }
+
+
+
+    .input-border {
+        border-radius: 5px;
     }
 }
