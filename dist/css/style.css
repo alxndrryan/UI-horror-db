@@ -589,4 +589,22 @@ img {
   h1 {
     margin-bottom: 1rem;
   }
+  .profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .profile img {
+    margin: auto;
+    width: 40%;
+  }
+  .profile .profile-flex {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .profile img {
+    margin: auto;
+    width: 100%;
+  }
 }

@@ -38,4 +38,31 @@
   h1 {
     margin-bottom: 1rem;
   }
+
+  // Profiles
+  .profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    img {
+      margin: auto;
+      width: 40%;
+    }
+
+    .profile-flex {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+
+  // Profiles
+  .profile {
+
+    img {
+      margin: auto;
+      width: 100%;
+    }
+  }
 }
