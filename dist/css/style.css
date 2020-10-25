@@ -603,6 +603,38 @@ img {
 }
 
 @media (max-width: 425px) {
+  .movie-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+    line-height: 1.8;
+    border: 3px solid #d72323;
+    padding: 1rem;
+  }
+  .movie-container img {
+    height: auto;
+    width: 150px;
+    margin: auto;
+  }
+  .movie-container .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .movie-container .flex .item-1,
+  .movie-container .flex .item-2 {
+    padding: 1rem;
+  }
+  .movie-container .flex .movie-line {
+    border: 1px solid #d72323;
+    margin: 1.5rem 0;
+  }
+  .movie-form {
+    width: auto;
+  }
+  .movie-form .btn {
+    width: auto;
+  }
   .profile img {
     margin: auto;
     width: 100%;
