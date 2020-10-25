@@ -62,37 +62,18 @@
 
   .mobile-container {
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .movie-container {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 3rem;
-
-    line-height: 1.8;
-    border: 3px solid $primary-color;
-    padding: 1rem;
+    margin-top: 0rem;
 
     img {
       height: auto;
       width: 150px;
       margin: auto;
-    }
-
-    .flex {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-
-      .item-1,
-      .item-2 {
-        padding: 1rem;
-      }
-
-      .movie-line {
-        border: 1px solid $primary-color;
-        margin: 1.5rem 0;
-      }
     }
   }
 
