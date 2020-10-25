@@ -22,12 +22,16 @@
         <a href="index.html"> <i class="fas fa-ghost"></i> Horror DB</a>
       </h1>
       <ul>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="posts.html">Post</a></li>
+        <li class="hide-sm">
+          <a href="profile.html">Profile</a>
+        </li>
+        <li class="hide-sm">
+          <a href="posts.html">Post</a>
+        </li>
         <li><a href="profiles.html">Community</a></li>
         <li><a href="register.html">Register</a></li>
         <li><a href="login.html">Login</a></li>
-        <li>
+        <li class="hide-sm">
           <form action="index.html">
             <input type="text" placeholder="Search for movie.." name="search" />
             <button type="submit"><i class="fa fa-search"></i></button>
@@ -40,7 +44,7 @@
       <p class="lead">
         <i class="fas fa-spider"></i> What's your favorite scary movie?
       </p>
-      <small>* = required field</small>
+      <p class="small">* = required field</p>
       <form class="form form-border cust-form bg-medium my-1">
         <div class="form-group">
           <input
@@ -67,31 +71,31 @@
           <button type="button" class="btn btn-light">
             Add Social Network Links
           </button>
-          <span>Optional</span>
+          <span class="hide-sm">Optional</span>
         </div>
 
         <div class="form-group social-input">
-          <i class="fab fa-twitter fa-2x"></i>
+          <i class="fab fa-twitter fa-2x hide-sm"></i>
           <input type="text" placeholder="Twitter URL" name="twitter" />
         </div>
 
         <div class="form-group social-input">
-          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fab fa-facebook fa-2x hide-sm"></i>
           <input type="text" placeholder="Facebook URL" name="facebook" />
         </div>
 
         <div class="form-group social-input">
-          <i class="fab fa-youtube fa-2x"></i>
+          <i class="fab fa-youtube fa-2x hide-sm"></i>
           <input type="text" placeholder="YouTube URL" name="youtube" />
         </div>
 
         <div class="form-group social-input">
-          <i class="fab fa-linkedin fa-2x"></i>
+          <i class="fab fa-linkedin fa-2x hide-sm"></i>
           <input type="text" placeholder="LinkedIn URL" name="linkedin" />
         </div>
 
         <div class="form-group social-input">
-          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-instagram fa-2x hide-sm"></i>
           <input type="text" placeholder="Instagram URL" name="instagram" />
         </div>
         <input type="submit" class="btn btn-primary my-1" />

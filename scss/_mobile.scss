@@ -5,6 +5,7 @@
 
   .container {
     margin-top: 8rem;
+    padding: 0 0.5rem;
   }
 
   // Text Styles
@@ -14,31 +15,28 @@
 
   .large {
     font-size: 2rem;
+    text-align: center;
   }
 
   .lead {
     font-size: 1rem;
+    text-align: center;
   }
 
   // Navbar
   .navbar {
     display: block;
     text-align: center;
-
-
   }
 
   ul {
     text-align: center;
     justify-content: center;
-
-
   }
 
   h1 {
     margin-bottom: 1rem;
   }
-
 
   // Profiles
   .profile {
@@ -58,6 +56,13 @@
 
 @media (max-width: 425px) {
   // Landing
+  .mobile-landing {
+    width: 100%;
+  }
+
+  .mobile-container {
+    margin-top: 2rem;
+  }
 
   .movie-container {
     display: grid;
@@ -72,7 +77,6 @@
       height: auto;
       width: 150px;
       margin: auto;
-
     }
 
     .flex {
@@ -80,10 +84,8 @@
       flex-direction: column;
       justify-content: space-around;
 
-
       .item-1,
       .item-2 {
-
         padding: 1rem;
       }
 
@@ -104,7 +106,6 @@
 
   // Profiles
   .profile {
-
     img {
       margin: auto;
       width: 100%;
@@ -118,7 +119,6 @@
   }
 
   .profile-grid {
-
     img,
     .profile-top img {
       width: 200px;
@@ -128,17 +128,25 @@
     .profile-top .icons a {
       color: $light-color;
       margin: 0 0.1rem;
-
-
     }
 
     .fav-movies {
       display: flex;
       flex-direction: column;
     }
-
   }
 
+  // Create-Profile
+  .create-profile .small {
+    text-align: center;
+    font-size: smaller;
+  }
 
+  .form {
+    text-align: center;
 
+    .btn {
+      margin-right: 0;
+    }
+  }
 }

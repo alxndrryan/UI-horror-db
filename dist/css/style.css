@@ -568,15 +568,18 @@ img {
   }
   .container {
     margin-top: 8rem;
+    padding: 0 0.5rem;
   }
   .x-large {
     font-size: 3rem;
   }
   .large {
     font-size: 2rem;
+    text-align: center;
   }
   .lead {
     font-size: 1rem;
+    text-align: center;
   }
   .navbar {
     display: block;
@@ -603,6 +606,12 @@ img {
 }
 
 @media (max-width: 425px) {
+  .mobile-landing {
+    width: 100%;
+  }
+  .mobile-container {
+    margin-top: 2rem;
+  }
   .movie-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -654,5 +663,15 @@ img {
   .profile-grid .fav-movies {
     display: flex;
     flex-direction: column;
+  }
+  .create-profile .small {
+    text-align: center;
+    font-size: smaller;
+  }
+  .form {
+    text-align: center;
+  }
+  .form .btn {
+    margin-right: 0;
   }
 }
