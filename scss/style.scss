@@ -3,306 +3,293 @@
 @import 'utilities';
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1 rem;
-    line-height: 1.6;
-    background-color: $dark-color;
-    color: $light-color;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1 rem;
+  line-height: 1.6;
+  background-color: $dark-color;
+  color: $light-color;
 }
 
 a {
-    text-decoration: none;
-    color: $primary-color;
+  text-decoration: none;
+  color: $primary-color;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 // Navbar
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px $primary-color;
+  opacity: 0.9;
+
+  ul {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.7rem 2rem;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    border-bottom: solid 1px $primary-color;
-    opacity: 0.9;
+  }
 
-    ul {
-        display: flex;
+  a {
+    color: #fff;
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  form {
+    border: none;
+
+    input,
+    button {
+      border: 1px solid red;
     }
 
-    a {
-        color: #fff;
-        padding: 0.45rem;
-        margin: 0 0.25rem;
-
-        &:hover {
-            color: $primary-color;
-        }
+    input {
+      padding: 6px;
+      border-radius: 25px 0 0 25px;
+      border-right: none;
     }
 
-    form {
-
-        border: none;
-
-        input,
-        button {
-            border: 1px solid red;
-        }
-
-        input {
-            padding: 6px;
-            border-radius: 25px 0 0 25px;
-            border-right: none;
-
-        }
-
-        button {
-            float: right;
-            padding: 6px 10px;
-            background: #ddd;
-            border-radius: 0 25px 25px 0;
-            border-left: none;
-            cursor: pointer;
-        }
+    button {
+      float: right;
+      padding: 6px 10px;
+      background: #ddd;
+      border-radius: 0 25px 25px 0;
+      border-left: none;
+      cursor: pointer;
     }
+  }
 }
 
 // Landing
 
 .landing {
-    position: relative;
-    background: url('../img/scary-woods.jpg') no-repeat center center/cover;
-    height: 100vh;
+  position: relative;
+  background: url('../img/scary-woods.jpg') no-repeat center center/cover;
+  height: 100vh;
 
-    &-inner {
-        color: $light-color;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        margin: auto;
-        text-align: center;
-        width: 80%;
-    }
+  &-inner {
+    color: $light-color;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+  }
 }
 
 // Movie API Call
 
 .movie-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
 
-    line-height: 1.8;
-    border: 3px solid $primary-color;
-    padding: 1rem;
+  line-height: 1.8;
+  border: 3px solid $primary-color;
+  padding: 1rem;
 
-    img {
-        height: auto;
-        width: auto;
-        margin-top: auto;
-        margin-bottom: auto;
+  img {
+    height: auto;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .item-1,
+    .item-2 {
+      padding: 1rem;
     }
 
-    .flex {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-
-
-        .item-1,
-        .item-2 {
-
-            padding: 1rem;
-        }
-
-        .movie-line {
-            border: 1px solid $primary-color;
-            margin: 1.5rem 0;
-        }
+    .movie-line {
+      border: 1px solid $primary-color;
+      margin: 1.5rem 0;
     }
+  }
 }
 
 .movie-container.user {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 // Landing Page Movie Search
 
 .med-h2 {
-    color: $primary-color;
+  color: $primary-color;
 }
 
 // Posts Page
 .post-form {
-    input.btn {
-        border: 1px solid $primary-color;
-    }
+  input.btn {
+    border: 1px solid $primary-color;
+  }
 }
 
 .post-form-header {
-    padding: 0.5rem;
-
-
+  padding: 0.5rem;
 }
 
 .post {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 2rem;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+  border: 1px solid $primary-color;
+
+  & > div:first-child {
+    text-align: center;
+  }
+
+  a {
+    color: $light-color;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  .btn {
     border: 1px solid $primary-color;
+  }
 
-    &>div:first-child {
-        text-align: center;
-    }
-
-    a {
-        color: $light-color;
-    }
-
-    img {
-        width: 150px;
-    }
-
-    .btn {
-        border: 1px solid $primary-color;
-    }
-
-    .btn.btn-primary {
-        border: 1px solid $light-color;
-    }
-
-
+  .btn.btn-primary {
+    border: 1px solid $light-color;
+  }
 }
 
 // Profiles Page
 .profile {
-    display: grid;
-    grid-template-columns: 200px 2fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
+  display: grid;
+  grid-template-columns: 200px 2fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
 
-    padding: 1rem 2rem 1rem 2rem;
-    line-height: 1.8;
-    margin-bottom: 1rem;
-    text-align: center;
+  padding: 1rem 2rem 1rem 2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  text-align: center;
 
-    .profile-center {
-        margin: auto;
+  .profile-center {
+    margin: auto;
 
-        p,
-        a {
-            margin: 0.3rem;
-        }
+    p,
+    a {
+      margin: 0.3rem;
     }
+  }
 
-    img {
-        margin-bottom: 0.7rem;
-    }
+  img {
+    margin-bottom: 0.7rem;
+  }
 
-    .profile-flex {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.2;
-        justify-content: space-between;
-    }
+  .profile-flex {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    justify-content: space-between;
+  }
 
-
-
-    .btn.btn-primary {
-        border: 1px solid $light-color;
-    }
+  .btn.btn-primary {
+    border: 1px solid $light-color;
+  }
 }
 
 // Single Profile Page
 .profile-grid {
-    display: grid;
-    grid-gap: 1rem;
+  display: grid;
+  grid-gap: 1rem;
 
-    .profile-top {
+  .profile-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-
-        img {
-            width: 250px;
-        }
-
-        .icons a {
-            color: $light-color;
-            margin: 0 0.3rem;
-
-            &:hover {
-                color: $primary-color;
-            }
-        }
+    img {
+      width: 250px;
     }
 
-    .profile-about {
-        text-align: center;
+    .icons a {
+      color: $light-color;
+      margin: 0 0.3rem;
 
-        h2 {
-            margin-bottom: 1rem;
-        }
-
-        .fav-movies {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .profile-flex {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.2;
-            justify-content: space-between;
-
-            img {
-                height: auto;
-                width: auto;
-                max-height: 200px;
-                max-width: 150;
-                margin-bottom: 0.7rem;
-            }
-        }
+      &:hover {
+        color: $primary-color;
+      }
     }
+  }
+
+  .profile-about {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    .fav-movies {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .profile-flex {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      justify-content: space-between;
+
+      img {
+        height: auto;
+        width: auto;
+        max-height: 200px;
+        max-width: 150;
+        margin-bottom: 0.7rem;
+      }
+    }
+  }
 }
 
+// Create Profile
 .create-profile {
+  .cust-form {
+    padding: 1rem 2rem;
+  }
 
-    .cust-form {
-        padding: 1rem 2rem;
-    }
+  .btn.btn-light,
+  input.btn.btn-primary {
+    border: 2px solid $dark-color;
+  }
 
-    .btn.btn-light,
-    input.btn.btn-primary {
-        border: 2px solid $dark-color;
-    }
-
-
-
-    .input-border {
-        border-radius: 5px;
-    }
+  .input-border {
+    border-radius: 5px;
+  }
 }
 
 @import 'mobile';

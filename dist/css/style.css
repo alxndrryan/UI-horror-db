@@ -629,6 +629,13 @@ img {
   .movie-form .btn {
     width: auto;
   }
+  .post {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .post .btn {
+    margin-left: 0.5rem;
+  }
   .profile img {
     margin: auto;
     width: 100%;

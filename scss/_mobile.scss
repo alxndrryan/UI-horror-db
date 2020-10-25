@@ -85,6 +85,16 @@
     }
   }
 
+  // Posts
+  .post {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    .btn {
+      margin-left: 0.5rem;
+    }
+  }
+
   // Profiles
   .profile {
     img {
