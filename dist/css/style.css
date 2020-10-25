@@ -602,9 +602,25 @@ img {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .profile img {
     margin: auto;
     width: 100%;
+  }
+  .mobile-btn {
+    margin-bottom: 0.5rem;
+  }
+  .profile-grid img,
+  .profile-grid .profile-top img {
+    width: 200px;
+    margin: auto;
+  }
+  .profile-grid .profile-top .icons a {
+    color: #eeeeee;
+    margin: 0 0.1rem;
+  }
+  .profile-grid .fav-movies {
+    display: flex;
+    flex-direction: column;
   }
 }

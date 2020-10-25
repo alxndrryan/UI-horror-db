@@ -55,7 +55,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
 
   // Profiles
   .profile {
@@ -65,4 +65,35 @@
       width: 100%;
     }
   }
+
+  // Profile
+
+  .mobile-btn {
+    margin-bottom: 0.5rem;
+  }
+
+  .profile-grid {
+
+    img,
+    .profile-top img {
+      width: 200px;
+      margin: auto;
+    }
+
+    .profile-top .icons a {
+      color: $light-color;
+      margin: 0 0.1rem;
+
+
+    }
+
+    .fav-movies {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+
+
 }
